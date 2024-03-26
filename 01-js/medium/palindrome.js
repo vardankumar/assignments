@@ -4,7 +4,18 @@
 */
 
 function isPalindrome(str) {
-  return true;
+  let strArr = str.toLowerCase().split("")
+  strArr = strArr.reverse()
+  let reversedStr = strArr.join("")
+  console.log(reversedStr)
+  if (reversedStr === str) {
+    return true;
+  }else {
+    return false
+  }
 }
+
+isPalindrome('apple')
+
 
 module.exports = isPalindrome;
